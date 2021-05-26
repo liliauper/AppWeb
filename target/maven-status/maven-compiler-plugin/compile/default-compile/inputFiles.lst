@@ -1,7 +1,7 @@
-/home/lilia/Documentos/A_InterfaceGrafica/tp1/ar.org.centro8.curso.java.web_RopaWebTp1_war_v0.1/src/main/java/ar/org/centro8/java/web/repositories/jdbc/ClienteRepository.java
-/home/lilia/Documentos/A_InterfaceGrafica/tp1/ar.org.centro8.curso.java.web_RopaWebTp1_war_v0.1/src/main/java/ar/org/centro8/java/web/enums/TipoDocumento.java
-/home/lilia/Documentos/A_InterfaceGrafica/tp1/ar.org.centro8.curso.java.web_RopaWebTp1_war_v0.1/src/main/java/ar/org/centro8/curso/java/connectors/Connector.java
-/home/lilia/Documentos/A_InterfaceGrafica/tp1/ar.org.centro8.curso.java.web_RopaWebTp1_war_v0.1/src/main/java/ar/org/centro8/java/entities/Cliente.java
-/home/lilia/Documentos/A_InterfaceGrafica/tp1/ar.org.centro8.curso.java.web_RopaWebTp1_war_v0.1/src/main/java/ar/org/centro8/curso/java/web/test/TestClienteRepository.java
-/home/lilia/Documentos/A_InterfaceGrafica/tp1/ar.org.centro8.curso.java.web_RopaWebTp1_war_v0.1/src/main/java/ar/org/centro8/curso/java/web/test/TestConnector.java
-/home/lilia/Documentos/A_InterfaceGrafica/tp1/ar.org.centro8.curso.java.web_RopaWebTp1_war_v0.1/src/main/java/ar/org/centro8/curso/java/repositories/interfaces/I_ClienteRepository.java
+/home/lilia/Documentos/A-AplicacionesWeb/Proyectos/RopaWebTp1/src/main/java/ar/org/centro8/curso/java/repositories/interfaces/I_ClienteRepository.java
+/home/lilia/Documentos/A-AplicacionesWeb/Proyectos/RopaWebTp1/src/main/java/ar/org/centro8/curso/java/web/test/TestConnector.java
+/home/lilia/Documentos/A-AplicacionesWeb/Proyectos/RopaWebTp1/src/main/java/ar/org/centro8/java/entities/Cliente.java
+/home/lilia/Documentos/A-AplicacionesWeb/Proyectos/RopaWebTp1/src/main/java/ar/org/centro8/curso/java/web/test/TestClienteRepository.java
+/home/lilia/Documentos/A-AplicacionesWeb/Proyectos/RopaWebTp1/src/main/java/ar/org/centro8/java/web/enums/TipoDocumento.java
+/home/lilia/Documentos/A-AplicacionesWeb/Proyectos/RopaWebTp1/src/main/java/ar/org/centro8/java/web/repositories/jdbc/ClienteRepository.java
+/home/lilia/Documentos/A-AplicacionesWeb/Proyectos/RopaWebTp1/src/main/java/ar/org/centro8/curso/java/connectors/Connector.java

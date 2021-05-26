@@ -22,7 +22,7 @@ public interface I_ClienteRepository {
                 .findAny()
                 .orElse(new Cliente());
     }
-    default Cliente getByNumeroDocumento(int numeroDocumento){
+    default Cliente getByNumeroDocumento(String numeroDocumento){
         return getAll()
                 .stream()
                 .filter(a->a.getNumeroDocumento()==numeroDocumento)

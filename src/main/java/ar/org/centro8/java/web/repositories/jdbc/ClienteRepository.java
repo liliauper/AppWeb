@@ -27,7 +27,7 @@ public class ClienteRepository implements I_ClienteRepository {
             return;
         }
         try (PreparedStatement ps = conn.prepareStatement(
-                "insert into clientes (nombre, apellido, edad, direccion, email,"
+                "insert into clientes (nombre, apellido, edad, direccion, email, "
                 + "telefono, tipoDocumento, numeroDocumento) "
                 + "values (?,?,?,?,?,?,?,?)",
                 PreparedStatement.RETURN_GENERATED_KEYS
@@ -39,7 +39,7 @@ public class ClienteRepository implements I_ClienteRepository {
             ps.setString(5, cliente.getEmail());
             ps.setString(6, cliente.getTelefono());
             ps.setString(7, cliente.getTipoDocumento().toString());
-            ps.setInt(8, cliente.getNumeroDocumento());
+            ps.setString(8, cliente.getNumeroDocumento());
 
             ps.execute();
             ResultSet rs = ps.getGeneratedKeys();
@@ -73,7 +73,7 @@ public class ClienteRepository implements I_ClienteRepository {
         }
         try (PreparedStatement ps = conn.prepareStatement(
                 "update clientes set nombre=?, apellido=?, edad=?, direccion=?,"
-                + "email=?, telefono=?, tipoDocumento=?, numeroDocumento=?"
+                + "email=?, telefono=?, tipoDocumento=?, numeroDocumento=? "
                 + "where id=?"
         )) {
             ps.setString(1, cliente.getNombre());
@@ -83,8 +83,8 @@ public class ClienteRepository implements I_ClienteRepository {
             ps.setString(5, cliente.getEmail());
             ps.setString(6, cliente.getTelefono());
             ps.setString(7, cliente.getTipoDocumento().toString());
-            ps.setInt(8, cliente.getNumeroDocumento());
-            ps.setInt(11, cliente.getId());
+            ps.setString(8, cliente.getNumeroDocumento());
+            ps.setInt(9, cliente.getId());
             ps.execute();
         } catch (Exception e) {
             System.out.println(e);
@@ -106,7 +106,7 @@ public class ClienteRepository implements I_ClienteRepository {
                                 rs.getString("email"),
                                 rs.getString("telefono"),
                                 TipoDocumento.valueOf(rs.getString("tipoDocumento")),
-                                rs.getInt("numeroDocumento")
+                                rs.getString("numeroDocumento")
                         )
                 );
             }

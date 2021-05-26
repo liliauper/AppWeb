@@ -12,12 +12,12 @@ public class Cliente {
     private String email;
     private String telefono;
     private TipoDocumento tipoDocumento;
-    private int numeroDocumento;
+    private String numeroDocumento;
 
     public Cliente() {
     }
 
-    public Cliente(int id, String nombre, String apellido, int edad, String direccion, String email, String telefono, TipoDocumento tipoDocumento, int numeroDocumento) {
+    public Cliente(int id, String nombre, String apellido, int edad, String direccion, String email, String telefono, TipoDocumento tipoDocumento, String numeroDocumento) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -29,7 +29,7 @@ public class Cliente {
         this.numeroDocumento = numeroDocumento;
     }
 
-    public Cliente(String nombre, String apellido, int edad, String direccion, String email, String telefono, TipoDocumento tipoDocumento, int numeroDocumento) {
+    public Cliente(String nombre, String apellido, int edad, String direccion, String email, String telefono, TipoDocumento tipoDocumento, String numeroDocumento) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
@@ -109,11 +109,11 @@ public class Cliente {
         this.tipoDocumento = tipoDocumento;
     }
 
-    public int getNumeroDocumento() {
+    public String getNumeroDocumento() {
         return numeroDocumento;
     }
 
-    public void setNumeroDocumento(int numeroDocumento) {
+    public void setNumeroDocumento(String numeroDocumento) {
         this.numeroDocumento = numeroDocumento;
     }
 
