@@ -1,0 +1,7 @@
+ar/org/centro8/curso/java/web/test/TestConnector.class
+ar/org/centro8/java/web/repositories/jdbc/ClienteRepository.class
+ar/org/centro8/curso/java/connectors/Connector.class
+ar/org/centro8/curso/java/web/test/TestClienteRepository.class
+ar/org/centro8/java/entities/Cliente.class
+ar/org/centro8/curso/java/repositories/interfaces/I_ClienteRepository.class
+ar/org/centro8/java/web/enums/TipoDocumento.class
